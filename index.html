@@ -19,7 +19,7 @@
           <img src="images/Mavisan.png" alt="" class="hidden h-10 w-auto dark:block" />
         </a>
       </div>
-      <div class="flex lg:hidden">
+      <div class="flex lg:hidden items-center">
         <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-200">
           <span class="sr-only">Open main menu</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-10">
@@ -28,19 +28,19 @@
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <a href="index.html" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Home</a>
-        <a href="about.html" class="text-sm/6 font-semibold text-gray-900 dark:text-white">About Me</a>
-        <a href="certifications.html" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Certifications</a>
-        <a href="techstacks.html" class="text-sm/6 font-semibold text-gray-900 dark:text-white">TechStacks</a>
+        <a href="index.html" class="text-sm/6 font-semibold text-gray-900 dark:text-white underline underline-offset-8 decoration-2 decoration-black-600 justify-center">Home</a>
+        <a href="about.html" class="text-sm/6 font-semibold text-gray-900 dark:text-white justify-center hover:border-b-2 hover:border-gray-300 transition-all">About Me</a>
+        <a href="certifications.html" class="text-sm/6 font-semibold text-gray-900 dark:text-white justify-center hover:border-b-2 hover:border-gray-300 transition-all">Certifications</a>
+        <a href="techstacks.html" class="text-sm/6 font-semibold text-gray-900 dark:text-white justify-center hover:border-b-2 hover:border-gray-300 transition-all">TechStacks</a>
       </div>
     </nav>
     <el-dialog>
       <dialog id="mobile-menu" class="m-0 p-0 backdrop:bg-transparent lg:hidden">
         <div tabindex="0" class="fixed inset-0 focus:outline focus:outline-0">
           <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-gray-900 dark:sm:ring-gray-100/10">
-            <div class="flex items-center justify-between">
+            <div class="flex items-center">
               <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
+                <span class="sr-only">Prince Semillano</span>
                 <img src="images/Mavisan.png" alt="" class="h-8 w-auto dark:hidden" />
                 <img src="images/Mavisan.png" alt="" class="hidden h-8 w-auto dark:block" />
               </a>
@@ -52,12 +52,12 @@
               </button>
             </div>
             <div class="mt-6 flow-root">
-              <div class="-my-6 divide-y divide-gray-500/10 dark:divide-white/10">
+              <div class="-my-6 divide-y divide-gray-500/10 dark:divide-white/10 items-center">
                 <div class="space-y-2 py-6">
-                  <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Home</a>
-                  <a href="about.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">About Me</a>
-                  <a href="certifications.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">Certifications</a>
-                  <a href="techstacks.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">TechStacks</a>
+                  <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white underline underline-offset-8 decoration-2 decoration-black-600 justify-center">Home</a>
+                  <a href="about.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white justify-center hover:border-gray-300">About Me</a>
+                  <a href="certifications.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white justify-center hover:border-gray-300">Certifications</a>
+                  <a href="techstacks.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white justify-center hover:border-gray-300">TechStacks</a>
                 </div>
               </div>
             </div>
@@ -66,7 +66,6 @@
       </dialog>
     </el-dialog>
   </header>
-
   <div class="relative isolate px-6 pt-14 lg:px-8 grid grid-cols-2 gap-2 items-center">
     <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
       <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
@@ -80,7 +79,7 @@
     <div class="flex-none flex justify-center">
       <img 
         src="images/Profile.png" 
-        alt="Prince Semillano" 
+        alt="Profile" 
         class="w-64 h-64 sm:w-80 sm:h-80 object-cover rounded-2xl shadow-2xl ring-4 ring-gray-100 dark:ring-gray-800"
       />
     </div>
