@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Stacks</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tech Stack</title>
 </head>
 <body>
-    
+    <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+    <div class="bg-white dark:bg-gray-900 min-h-screen overflow-hidden relative">
+        <header class="absolute inset-x-0 top-0 z-50">
+            <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+              <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Prince Semillano | Web Portfolio</span>
+                  <img src="images/Mavisan.png" alt="" class="h-10 w-auto dark:hidden" />
+                  <img src="images/Mavisan.png" alt="" class="hidden h-10 w-auto dark:block" />
+                </a>
+              </div>
+              <div class="flex lg:hidden items-center">
+                <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-200">
+                  <span class="sr-only">Open main menu</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-10">
+                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+              <div class="hidden lg:flex lg:gap-x-12">
+                <a href="index.html" class="text-sm/6 font-semibold text-gray-900 dark:text-white border-b-2 border-transparent hover:border-gray-300 transition-all">Home</a>
+                <a href="about_me.html" class="text-sm/6 font-semibold text-gray-900 dark:text-white border-b-2 border-transparent hover:border-gray-300 transition-all">About Me</a>
+                <a href="certifications.html" class="text-sm/6 font-semibold text-gray-900 dark:text-white border-b-2 border-transparent hover:border-gray-300 transition-all">Certifications</a>
+                <a href="techstacks.html" class="text-sm/6 font-semibold text-gray-900 dark:text-white underline underline-offset-8 decoration-2 decoration-black-600 transition-all">Tech Stack</a>
+              </div>
+            </nav>
+            <el-dialog>
+              <dialog id="mobile-menu" class="m-0 p-0 backdrop:bg-transparent lg:hidden">
+                <div tabindex="0" class="fixed inset-0 focus:outline focus:outline-0">
+                  <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-gray-900 dark:sm:ring-gray-100/10">
+                    <div class="flex items-center">
+                      <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Prince Semillano</span>
+                        <img src="images/Mavisan.png" alt="" class="h-8 w-auto dark:hidden" />
+                        <img src="images/Mavisan.png" alt="" class="hidden h-8 w-auto dark:block" />
+                      </a>
+                      <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-200">
+                        <span class="sr-only">Close menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                          <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                      <div class="-my-6 divide-y divide-gray-500/10 dark:divide-white/10 items-center">
+                        <div class="space-y-2 py-6">
+                          <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-center text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white hover:border-gray-300">Home</a>
+                          <a href="about_me.html" class="-mx-3 block rounded-lg px-3 py-2 text-center text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white hover:border-gray-300">About Me</a>
+                          <a href="certifications.html" class="-mx-3 block rounded-lg px-3 py-2 text-center text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white hover:border-gray-300">Certifications</a>
+                          <a href="techstacks.html" class="-mx-3 block rounded-lg px-3 py-2 text-center text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white hover:border-gray-300 underline underline-offset-8 decoration-2 decoration-black-600">Tech Stack</a>
+                        </div>
+                      </div>
+                    </div>
+                  </el-dialog-panel>
+                </div>
+              </dialog>
+            </el-dialog>
+        </header>
+        <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+            <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+        </div>
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 justify-center">
+            <div class="text-center">
+                <h1 class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl dark:text-white">Tech Stack</h1>
+                <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 dark:text-gray-400">As an IT, I've learned and established knowledges in different languages and development applications.</p>
+            </div>
+        </div>
+        <div class="relative isolate px-6 pt-14 lg:px-8 grid grid-cols-2 gap-2 items-center">
+            <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+                <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
