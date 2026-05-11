@@ -1,0 +1,63 @@
+
+
+/* Navigation Links */
+.nav-link {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: #ffffff; /* Gray-900 */
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.dark .nav-link {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    border-color: #d1d5db; /* Gray-300 */
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #ffffff;
+}
+
+.dark .nav-link.active {
+    text-decoration-color: #fff;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 16rem; /* 64 */
+    height: 20rem; /* 80 */
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s;
+}
+
+@media (min-width: 640px) {
+    .profile-img {
+        width: 20rem; /* 80 */
+        height: 25rem; /* 100 */
+    }
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Custom smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure images don't break layout if missing */
+img {
+    font-size: 10px;
+    color: transparent;
+}
