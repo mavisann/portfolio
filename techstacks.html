@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
-    <title>Prince Semillano | Tech Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Tech Stack | Prince Semillano</title>
 </head>
 <body class="bg-white dark:bg-gray-900">
   <main class="bg-white dark:bg-gray-900 max-w-10xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+    <!-- Navigation Bars -->
     <header class="absolute inset-x-0 top-0 z-50">
+      
+      <!-- Desktop Navigation -->
       <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
         <div class="flex lg:flex-1">
           <a href="index.html" class="-m-1.5 p-1.5">
@@ -33,12 +39,15 @@
           <a href="techstacks.html" class="text-sm/6 font-semibold text-gray-900 dark:text-white underline underline-offset-8 decoration-2 decoration-black-600 transition-all">Tech Stack</a>
         </div>
       </nav>
+      <!-- End of Desktop Navigation -->
+      
+      <!-- Phone Navigation -->
       <el-dialog>
         <dialog id="mobile-menu" class="m-0 p-0 backdrop:bg-transparent lg:hidden">
           <div tabindex="0" class="fixed inset-0 focus:outline focus:outline-0">
             <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-gray-900 dark:sm:ring-gray-100/10">
-              <div class="flex items-center">
-                <a href="#" class="-m-1.5 p-1.5">
+              <div class="flex items-center justify-between w-full">
+                <a href="index.html" class="-m-1.5 p-1.5">
                   <span class="sr-only">Prince Semillano</span>
                   <img src="images/Mavisan.png" alt="" class="h-8 w-auto dark:hidden" />
                   <img src="images/Mavisan.png" alt="" class="hidden h-8 w-auto dark:block" />
@@ -64,28 +73,35 @@
           </div>
         </dialog>
       </el-dialog>
+      <!-- End of Phone Navigation -->
     </header>
-    <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-      <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
-    </div>
+    <!-- End of Navigation Bars -->
+
+    <!-- Hero Section -->
     <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+
       <div class="text-center">
-        <h1 class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl dark:text-white">Tech Stack</h1>
+        <h1 id="hero-title" class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl dark:text-white">Tech Stack</h1>
         <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 dark:text-gray-400">As an IT, I've learned and established knowledges in different languages and development applications.</p>
       </div>
-      <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-10">
+      <!-- End of Hero Section -->
+
+        <!-- Programming Languages and Databases -->
         <div class="text-center mx-auto max-w-2xl py-15 sm:py-10">
           <h3 class="text-balance text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl dark:text-white">Programming Languages and Databases</h3>
           <p class="mt-4 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 sm:text-2xl dark:text-gray-400">Through my studies and projects, I have gained proficiency in various programming languages and database systems.</p>
         </div>
-
+      
+      <!-- Programming Languages and Databases Cards-->
+      <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-10">
+      <!-- Java Programming Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">Java Programming Language</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/programming-language/java.png" onclick="openModal('images/programming-language/java.png')" alt="Java" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/programming-language/java.png" alt="Java" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -93,14 +109,16 @@
             </h3>
           </div>
         </div>
-
+        <!-- End of Java Programming Card-->
+        
+        <!-- HTML Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">HTML 5 Markup Language</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/programming-language/html.png" onclick="openModal('images/programming-language/html.png')" alt="HTML" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/programming-language/html.png" alt="HTML" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -108,14 +126,16 @@
             </h3>
           </div>
         </div>
+        <!-- End of HTML Programming Card-->
 
+        <!-- C Programming Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">C Programming Language</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/programming-language/c-lang.png" onclick="openModal('images/programming-language/c-lang.png')" alt="C" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/programming-language/c-lang.png" alt="C" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -123,14 +143,16 @@
             </h3>
           </div>
         </div>
+        <!-- End of C Programming Card-->
 
+        <!-- MySQL Database Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">MySQL Database</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/programming-language/mysql.png" onclick="openModal('images/programming-language/mysql.png')" alt="MySQL" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/programming-language/mysql.png" alt="MySQL" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -138,14 +160,16 @@
             </h3>
           </div>
         </div>
+        <!-- End of MySQL Database Card-->
 
+        <!--PostgreSQL Database Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">PostgreSQL Database</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/programming-language/postgre.png" onclick="openModal('images/programming-language/postgre.png')" alt="PostgreSQL" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/programming-language/postgre.png" alt="PostgreSQL" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -153,14 +177,16 @@
             </h3>
           </div>
         </div>
+        <!-- End of PostgreSQL Database Card-->
 
+        <!-- SQLite Database Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">SQLite Database</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/programming-language/sqlite.png" onclick="openModal('images/programming-language/sqlite.png')" alt="SQLite" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/programming-language/sqlite.png" alt="SQLite" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -168,14 +194,16 @@
             </h3>
           </div>
         </div>
+        <!-- End of SQLite Database Card-->
 
+        <!-- CSS Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">CSS</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/programming-language/css.svg" onclick="openModal('images/programming-language/css.svg')" alt="CSS" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/programming-language/css.svg" alt="CSS" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -183,14 +211,16 @@
             </h3>
           </div>
         </div>
+        <!-- End of CSS Card-->
 
+        <!-- JavaScript Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">JavaScript</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/programming-language/js.png" onclick="openModal('images/programming-language/js.png')" alt="JavaScript" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/programming-language/js.png" alt="JavaScript" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -198,19 +228,27 @@
             </h3>
           </div>
         </div>
+        <!-- End of JavaScript Card-->
+      </div>
+      <!-- End of Programming Languages and Databases -->
 
-        <div class="text-center mx-auto max-w-2xl py-15 sm:py-10">
-          <h3 class="text-balance text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl dark:text-white">Development Tools</h3>
-          <p class="mt-4 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 sm:text-2xl dark:text-gray-400">I have experience with various development tools and IDEs that enhance my productivity and code quality.</p>
-        </div>
+      <!-- Development Tools -->
+      <div class="text-center mx-auto max-w-2xl py-15 sm:py-10">
+        <h3 class="text-balance text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl dark:text-white">Development Tools</h3>
+        <p class="mt-4 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 sm:text-2xl dark:text-gray-400">I have experience with various development tools and IDEs that enhance my productivity and code quality.</p>
+      </div>
 
+      <!-- Development Tools Cards-->
+      <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-10">
+      
+        <!-- NetBeans IDE Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">NetBeans IDE</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/dev-tools/netbeans.svg" onclick="openModal('images/dev-tools/netbeans.svg')" alt="NetBeans IDE" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/dev-tools/netbeans.svg" alt="NetBeans IDE" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -218,14 +256,16 @@
             </h3>
           </div>
         </div>
+        <!-- End of NetBeans IDE Card-->
 
+        <!-- Android Studio Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">Android Studio</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/dev-tools/android-studio.png" onclick="openModal('images/dev-tools/android-studio.png')" alt="Android Studio" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/dev-tools/android-studio.png" alt="Android Studio" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -233,14 +273,16 @@
             </h3>
           </div>
         </div>
+        <!-- End of Android Studio Card-->
 
+        <!-- Github Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">GitHub</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/dev-tools/github.png" onclick="openModal('images/dev-tools/github.png')" alt="GitHub" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/dev-tools/github.png" alt="GitHub" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -248,14 +290,16 @@
             </h3>
           </div>
         </div>
+        <!-- End of Github Card-->
 
+        <!-- Visual Studio Code Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">Visual Studio Code</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/dev-tools/visual-studio.png" onclick="openModal('images/dev-tools/visual-studio.png')" alt="Visual Studio Code" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/dev-tools/visual-studio.png" alt="Visual Studio Code" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -263,14 +307,16 @@
             </h3>
           </div>
         </div>
+        <!-- End of Visual Studio Code Card-->
 
+        <!-- Git Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">Git</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/dev-tools/git.png" onclick="openModal('images/dev-tools/git.png')" alt="Git" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/dev-tools/git.png" alt="Git" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -278,63 +324,28 @@
             </h3>
           </div>
         </div>
+        <!-- End of Git Card-->
 
-        <dialog id="certModal" class="fixed inset-0 z-[100] m-0 h-full w-full max-w-none max-h-none bg-transparent p-0 backdrop:bg-gray-900/90 backdrop:backdrop-blur-md overflow-hidden">
-          <div class="flex h-screen w-screen items-center justify-center p-4 sm:p-10">
-            <button onclick="closeModal()" class="absolute top-6 right-6 z-[110] text-white/70 hover:text-white transition-all hover:rotate-90">
-              <svg xmlns="http://www.w3.org/2000/svg" class="size-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-            <div class="relative max-w-full max-h-full flex items-center justify-center">
-              <img id="modalImg" src="" class="max-w-full max-h-[90vh] w-auto h-auto rounded-lg shadow-2xl object-contain border border-white/10" />
-            </div>
-          </div>
-        </dialog>
-
-        <script>
-          const modal = document.getElementById('certModal');
-          const modalImg = document.getElementById('modalImg');
-
-          function openModal(src) {
-            modalImg.src = src;
-            modal.showModal();
-            // Use fixed to prevent background scroll corruption
-            document.body.style.position = 'fixed';
-            document.body.style.width = '100%';
-          }
-
-          function closeModal() {
-            modal.close();
-            document.body.style.position = '';
-            document.body.style.width = '';
-          }
-
-          // Close when clicking the backdrop (the area outside the image)
-          modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeModal();
-          });
-        </script>
       </div>
-    </div>
-    <div class="relative isolate px-6 pt-14 lg:px-8 grid grid-cols-2 gap-2 items-center">
-      <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-        <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
-      </div>
-    </div>
+      <!-- End of Development Tools -->
 
-    <footer class="mt-auto pt-10 border-t border-gray-200 dark:border-gray-800">
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="relative z-10 mt-auto pt-10 border-t border-gray-200 dark:border-gray-800">
       <div class="flex justify-center space-x-6">
-        <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
+        <a href="https://www.linkedin.com/in/mavisan07" target="_blank" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
           <span class="sr-only">LinkedIn</span>
           <img src="images/socials/linkedin-acc.png" alt="LinkedIn" class="size-6 object-contain" />
         </a>
-        <a href="https://github.com/yourusername" target="_blank" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
+        <a href="https://github.com/mavisann" target="_blank" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
           <span class="sr-only">GitHub</span>
           <img src="images/socials/github-acc.png" alt="GitHub" class="size-6 object-contain" />
         </a>
       </div>
     </footer>
+    <!-- End of Footer -->
 
   </main>
 </body>
