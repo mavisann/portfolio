@@ -11,6 +11,10 @@
     text-decoration: none;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 .dark .nav-link {
     color: #ffffff;
 }

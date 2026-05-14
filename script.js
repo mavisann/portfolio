@@ -29,7 +29,7 @@ if (modal) {
 // Page Animations
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Elements to animate on scroll
-  const scrollTargets = document.querySelectorAll('#hero-title, .group.relative, h3, h5, p, footer, .profile-img');
+  const scrollTargets = document.querySelectorAll('#hero-title, .group.relative, h3, h5, p, footer, .profile-img, .tech-stack-section-title');
 
   // 2. Immediate Setup: Hide elements before they scroll into view
   anime.set(scrollTargets, {
