@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     <link rel="stylesheet" href="style.css">
@@ -19,9 +20,9 @@
       <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
         <div class="flex lg:flex-1">
           <a href="index.html" class="-m-1.5 p-1.5">
-            <span class="sr-only">Prince Semillano | About Me</span>
-            <img src="images/Mavisan.png" alt="Mavisan" class="h-10 w-auto dark:hidden" />
-            <img src="images/Mavisan.png" alt="Mavisan" class="hidden h-10 w-auto dark:block" />
+            <span class="sr-only">Prince Semillano | About Me - Mavisan Logo</span>
+            <img src="images/Mavisan-light.png" alt="Mavisan Logo (Light Mode)" class="h-10 w-auto dark:hidden" />
+            <img src="images/Mavisan-dark.png" alt="Mavisan Logo (Dark Mode)" class="hidden h-10 w-auto dark:block" />
           </a>
         </div>
         <div class="flex lg:hidden items-center">
@@ -49,8 +50,8 @@
               <div class="flex items-center justify-between w-full">
                 <a href="index.html" class="-m-1.5 p-1.5">
                   <span class="sr-only">Prince Semillano</span>
-                  <img src="images/Mavisan.png" alt="Mavisan" class="h-8 w-auto dark:hidden" />
-                  <img src="images/Mavisan.png" alt="Mavisan" class="hidden h-8 w-auto dark:block" />
+                  <img src="images/Mavisan-light.png" alt="Mavisan Logo (Light Mode)" class="h-8 w-auto dark:hidden" />
+                  <img src="images/Mavisan-dark.png" alt="Mavisan Logo (Dark Mode)" class="hidden h-8 w-auto dark:block" />
                 </a>
                 <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-200">
                   <span class="sr-only">Close menu</span>
@@ -78,30 +79,32 @@
     <!-- End of Navigation Bars -->
 
     <!-- About Me Content -->
-    <div class="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56">
+    <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32">
       <div class="text-center">
         <h1 id="hero-title" class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl dark:text-white">Hi, I'm Prince Semillano!</h1>
         <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 dark:text-gray-400">There's a few things you should know about me....</p>
       </div>
 
-      <div class="text-left mt-12 relative isolate">
+      <div class="text-left mt-10 relative isolate">
         <h5 class="text-3xl font-semibold text-gray-900 dark:text-white">Your not so ordinary IT Professional 😉</h5>
-        <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 dark:text-gray-400">I am Prince Semillano, an Information Technology Student and developer specializing in responsive web design and database management. With a strong foundation in Java and SQL, I build applications that are as powerful as they are intuitive. I’m currently focused on mastering the latest web technologies and looking for opportunities to collaborate on innovative projects. Outside of my studies, I am an avid gamer who applies strategic logic to Valorant and Mobile Legends. I also appreciate the creative and social aspects of Roblox and MCGG, alongside a deep interest in the storytelling found in dramas like Twenty-Five Twenty-One and Bad Buddy. Whether I am automating spreadsheets or competing online, I thrive on projects that blend technical skill with creative problem-solving.</p>
-        <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 dark:text-gray-400">Professionally, I aspire to become a proficient full-stack developer capable of architecting secure and scalable enterprise solutions. I am particularly interested in advancing my expertise in database management and IT project management to lead technical teams in the future. By continuing to master version control workflows and exploring new frameworks, I aim to contribute meaningfully to the ever-evolving tech industry.</p>
+        <p class="mt-6 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 dark:text-gray-400">I am Prince Semillano, an Information Technology Student and developer specializing in responsive web design and database management. With a strong foundation in Java and SQL, I build applications that are as powerful as they are intuitive. I’m currently focused on mastering the latest web technologies and looking for opportunities to collaborate on innovative projects. Outside of my studies, I am an avid gamer who applies strategic logic to Valorant and Mobile Legends. I also appreciate the creative and social aspects of Roblox and MCGG, alongside a deep interest in the storytelling found in dramas like Twenty-Five Twenty-One and Bad Buddy. Whether I am automating spreadsheets or competing online, I thrive on projects that blend technical skill with creative problem-solving.</p>
+        <p class="mt-6 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 dark:text-gray-400">Professionally, I aspire to become a proficient full-stack developer capable of architecting secure and scalable enterprise solutions. I am particularly interested in advancing my expertise in database management and IT project management to lead technical teams in the future. By continuing to master version control workflows and exploring new frameworks, I aim to contribute meaningfully to the ever-evolving tech industry.</p>
       </div>
     </div>
     <!-- End of About Me Content -->
 
     <!-- Footer -->
-    <footer class="relative z-10 mt-auto pt-10 border-t border-gray-200 dark:border-gray-800">
+    <footer class="relative z-10 mt-auto pt-6 border-t border-gray-200 dark:border-gray-800">
       <div class="flex justify-center space-x-6">
         <a href="https://www.linkedin.com/in/mavisan07" target="_blank" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
           <span class="sr-only">LinkedIn</span>
-          <img src="images/socials/linkedin-acc.png" alt="LinkedIn" class="size-6 object-contain" />
+          <img src="images/socials/linkedin-acc-light.png" alt="LinkedIn (Light Mode)" class="size-10 object-contain dark:hidden" />
+          <img src="images/socials/linkedin-acc-dark.png" alt="LinkedIn (Dark Mode)" class="size-10 object-contain hidden dark:block" />
         </a>
         <a href="https://github.com/mavisann" target="_blank" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
           <span class="sr-only">GitHub</span>
-          <img src="images/socials/github-acc.png" alt="GitHub" class="size-6 object-contain" />
+          <img src="images/socials/github-acc-light.png" alt="GitHub (Light Mode)" class="size-10 object-contain dark:hidden" />
+          <img src="images/socials/github-acc-dark.png" alt="GitHub (Dark Mode)" class="size-10 object-contain hidden dark:block" />
         </a>
       </div>
     </footer>

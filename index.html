@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     <link rel="stylesheet" href="style.css">
@@ -19,9 +20,9 @@
       <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
         <div class="flex lg:flex-1">
           <a href="index.html" class="-m-1.5 p-1.5">
-            <span class="sr-only">Prince Semillano | Web Portfolio</span>
-            <img src="images/Mavisan.png" alt="" class="h-10 w-auto dark:hidden" />
-            <img src="images/Mavisan.png" alt="" class="hidden h-10 w-auto dark:block" />
+            <span class="sr-only">Prince Semillano | Web Portfolio - Mavisan Logo</span>
+            <img src="images/Mavisan-light.png" alt="Mavisan Logo (Light Mode)" class="h-10 w-auto dark:hidden" />
+            <img src="images/Mavisan-dark.png" alt="Mavisan Logo (Dark Mode)" class="hidden h-10 w-auto dark:block" />
           </a>
         </div>
         <div class="flex lg:hidden items-center">
@@ -49,8 +50,8 @@
               <div class="flex items-center justify-between w-full">
                 <a href="index.html" class="-m-1.5 p-1.5">
                   <span class="sr-only">Prince Semillano</span>
-                  <img src="images/Mavisan.png" alt="" class="h-8 w-auto dark:hidden" />
-                  <img src="images/Mavisan.png" alt="" class="hidden h-8 w-auto dark:block" />
+                  <img src="images/Mavisan-light.png" alt="Mavisan Logo (Light Mode)" class="h-8 w-auto dark:hidden" />
+                  <img src="images/Mavisan-dark.png" alt="Mavisan Logo (Dark Mode)" class="hidden h-8 w-auto dark:block" />
                 </a>
                 <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-200">
                   <span class="sr-only">Close menu</span>
@@ -78,7 +79,7 @@
     <!-- End of Navigation Bars -->
 
     <!-- Hero Section -->
-    <div class="relative isolate px-6 pt-24 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="relative isolate px-6 pt-20 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <!-- Profile Picture -->
       <div class="flex justify-center order-1 md:order-2">
         <img 
@@ -87,7 +88,7 @@
           class="profile-img w-64 h-80 sm:w-80 sm:h-100 object-cover rounded-2xl shadow-2xl ring-4 ring-gray-100 dark:ring-gray-800"/>
       </div>
       <!-- Homepage Content -->
-      <div class="mx-auto max-w-2xl py-10 md:py-32 lg:py-56 order-2 md:order-1">
+      <div class="mx-auto max-w-2xl py-8 md:py-20 lg:py-32 order-2 md:order-1">
         <div class="text-center md:text-left">
           <h1 id="hero-title" class="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-7xl dark:text-white">
             Hi, I'm Prince Semillano!
@@ -101,15 +102,17 @@
     <!-- End of Hero Section -->
 
     <!-- Footer -->
-    <footer class="relative z-10 mt-auto pt-10 border-t border-gray-200 dark:border-gray-800">
+    <footer class="relative z-10 mt-auto pt-6 border-t border-gray-200 dark:border-gray-800">
       <div class="flex justify-center space-x-6">
         <a href="https://www.linkedin.com/in/mavisan07" target="_blank" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
           <span class="sr-only">LinkedIn</span>
-          <img src="images/socials/linkedin-acc.png" alt="LinkedIn" class="size-6 object-contain" />
+          <img src="images/socials/linkedin-acc-light.png" alt="LinkedIn (Light Mode)" class="size-10 object-contain dark:hidden" />
+          <img src="images/socials/linkedin-acc-dark.png" alt="LinkedIn (Dark Mode)" class="size-10 object-contain hidden dark:block" />
         </a>
         <a href="https://github.com/mavisann" target="_blank" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
           <span class="sr-only">GitHub</span>
-          <img src="images/socials/github-acc.png" alt="GitHub" class="size-6 object-contain" />
+          <img src="images/socials/github-acc-light.png" alt="GitHub (Light Mode)" class="size-10 object-contain dark:hidden" />
+          <img src="images/socials/github-acc-dark.png" alt="GitHub (Dark Mode)" class="size-10 object-contain hidden dark:block" />
         </a>
       </div>
     </footer>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     <link rel="stylesheet" href="style.css">
@@ -19,9 +20,9 @@
       <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
         <div class="flex lg:flex-1">
           <a href="index.html" class="-m-1.5 p-1.5">
-            <span class="sr-only">Prince Semillano | Tech Stack</span>
-            <img src="images/Mavisan.png" alt="" class="h-10 w-auto dark:hidden" />
-            <img src="images/Mavisan.png" alt="" class="hidden h-10 w-auto dark:block" />
+            <span class="sr-only">Prince Semillano | Tech Stack - Mavisan Logo</span>
+            <img src="images/Mavisan-light.png" alt="Mavisan Logo (Light Mode)" class="h-10 w-auto dark:hidden" />
+            <img src="images/Mavisan-dark.png" alt="Mavisan Logo (Dark Mode)" class="hidden h-10 w-auto dark:block" />
           </a>
         </div>
         <div class="flex lg:hidden items-center">
@@ -49,8 +50,8 @@
               <div class="flex items-center justify-between w-full">
                 <a href="index.html" class="-m-1.5 p-1.5">
                   <span class="sr-only">Prince Semillano</span>
-                  <img src="images/Mavisan.png" alt="" class="h-8 w-auto dark:hidden" />
-                  <img src="images/Mavisan.png" alt="" class="hidden h-8 w-auto dark:block" />
+                  <img src="images/Mavisan-light.png" alt="Mavisan Logo (Light Mode)" class="h-8 w-auto dark:hidden" />
+                  <img src="images/Mavisan-dark.png" alt="Mavisan Logo (Dark Mode)" class="hidden h-8 w-auto dark:block" />
                 </a>
                 <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-200">
                   <span class="sr-only">Close menu</span>
@@ -78,7 +79,7 @@
     <!-- End of Navigation Bars -->
 
     <!-- Hero Section -->
-    <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+    <div class="mx-auto max-w-2xl py-20 sm:py-24 lg:py-32">
 
       <div class="text-center">
         <h1 id="hero-title" class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl dark:text-white">Tech Stack</h1>
@@ -87,13 +88,13 @@
       <!-- End of Hero Section -->
 
         <!-- Programming Languages and Databases -->
-        <div class="text-center mx-auto max-w-2xl py-15 sm:py-10">
-          <h3 class="text-balance text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl dark:text-white">Programming Languages and Databases</h3>
+        <div class="text-center mx-auto max-w-2xl py-10 sm:py-8">
+          <h3 class="tech-stack-section-title text-balance text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl dark:text-white">Programming Languages and Databases</h3>
           <p class="mt-4 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 sm:text-2xl dark:text-gray-400">Through my studies and projects, I have gained proficiency in various programming languages and database systems.</p>
         </div>
       
-      <!-- Programming Languages and Databases Cards-->
-      <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-10">
+      <!-- Programming Languages and Databases Cards -->
+      <div class="mt-6 flex flex-wrap justify-center gap-x-4 gap-y-6">
       <!-- Java Programming Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
@@ -233,13 +234,13 @@
       <!-- End of Programming Languages and Databases -->
 
       <!-- Development Tools -->
-      <div class="text-center mx-auto max-w-2xl py-15 sm:py-10">
-        <h3 class="text-balance text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl dark:text-white">Development Tools</h3>
+      <div class="text-center mx-auto max-w-2xl py-10 sm:py-8">
+        <h3 class="tech-stack-section-title text-balance text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl dark:text-white">Development Tools</h3>
         <p class="mt-4 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 sm:text-2xl dark:text-gray-400">I have experience with various development tools and IDEs that enhance my productivity and code quality.</p>
       </div>
 
       <!-- Development Tools Cards-->
-      <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-10">
+      <div class="mt-6 flex flex-wrap justify-center gap-x-4 gap-y-6">
       
         <!-- NetBeans IDE Card-->
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
@@ -282,7 +283,8 @@
               <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">GitHub</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
-            <img src="images/dev-tools/github.png" alt="GitHub" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
+            <img src="images/dev-tools/github-light.png" alt="GitHub (Light Mode)" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110 dark:hidden" />
+            <img src="images/dev-tools/github-dark.png" alt="GitHub (Dark Mode)" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110 hidden dark:block" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
@@ -296,14 +298,14 @@
         <div class="group relative bg-white dark:bg-gray-900 rounded-2xl p-5 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ring-1 ring-gray-200 dark:ring-gray-800 flex flex-col items-center">
           <div class="overflow-hidden rounded-xl cursor-zoom-in w-32 h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800/50">
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-center dark:bg-gray-900 rounded-2xl backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-              <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">Visual Studio Code</span>
+              <span class="text-sm font-black text-gray-900 dark:text-white text-center px-2 leading-tight">VS Code</span>
               <div class="w-8 h-1 bg-indigo-500 mt-1 rounded-full"></div>
             </div>
             <img src="images/dev-tools/visual-studio.png" alt="Visual Studio Code" class="max-w-[70%] max-h-[70%] object-contain transition-transform duration-500 group-hover:scale-110" />
           </div>
           <div class="mt-4">
             <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white">
-              <a href="#" class="">Visual Studio Code</a>
+              <a href="#" class="">VS Code</a>
             </h3>
           </div>
         </div>
@@ -333,15 +335,17 @@
     
 
     <!-- Footer -->
-    <footer class="relative z-10 mt-auto pt-10 border-t border-gray-200 dark:border-gray-800">
+    <footer class="relative z-10 mt-auto pt-6 border-t border-gray-200 dark:border-gray-800">
       <div class="flex justify-center space-x-6">
         <a href="https://www.linkedin.com/in/mavisan07" target="_blank" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
           <span class="sr-only">LinkedIn</span>
-          <img src="images/socials/linkedin-acc.png" alt="LinkedIn" class="size-6 object-contain" />
+          <img src="images/socials/linkedin-acc-light.png" alt="LinkedIn (Light Mode)" class="size-10 object-contain dark:hidden" />
+          <img src="images/socials/linkedin-acc-dark.png" alt="LinkedIn (Dark Mode)" class="size-10 object-contain hidden dark:block" />
         </a>
         <a href="https://github.com/mavisann" target="_blank" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
           <span class="sr-only">GitHub</span>
-          <img src="images/socials/github-acc.png" alt="GitHub" class="size-6 object-contain" />
+          <img src="images/socials/github-acc-light.png" alt="GitHub (Light Mode)" class="size-10 object-contain dark:hidden" />
+          <img src="images/socials/github-acc-dark.png" alt="GitHub (Dark Mode)" class="size-10 object-contain hidden dark:block" />
         </a>
       </div>
     </footer>
